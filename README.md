@@ -12,6 +12,8 @@ Features:
 4. Show outline beside the content
 5. Buttons for GoTop, ViewSource and GoBottom
 
+More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
+
 License
 ================
 
