@@ -105,3 +105,8 @@ dd{margin-left:2em;margin-bottom:1em;}
 	cursor:pointer;
 }
 
+@media print{
+	#markdown-container{
+		border-width:0;
+	}
+}
