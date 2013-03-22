@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Markdown Viewer ",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "View markdown file in Chrome.",
 	"icons": {
 		"128": "images/favicon.png",
@@ -15,7 +15,7 @@
 		"run_at": "document_end"
 	}],
 	"web_accessible_resources": [
-		"markdownreader.css",
+		"markdownviewer.css",
 		"prettify.css",
     "images/top-icon.png",
     "images/source-s-icon.png",

@@ -4,7 +4,7 @@
 
 	var link = document.createElement('link');
 	link.rel = 'stylesheet';
-	link.href = chrome.extension.getURL('markdownreader.css');
+	link.href = chrome.extension.getURL('markdownviewer.css');
 	document.head.appendChild(link);
 
 	link = document.createElement('link');
