@@ -70,39 +70,41 @@ dd{margin-left:2em;margin-bottom:1em;}
 }
 
 #markdown-backTop{
-	position: fixed;
 	right:5px;
 	bottom:5px;
 	padding:5px;
 	width:20px;
 	height:20px;
 	background:url(images/top-icon.png) no-repeat 5px 5px;
-	border:1px solid #ccc;
 	cursor:pointer;
 }
 
 #markdown-raw{
-	position: fixed;
 	right:60px;
 	bottom:5px;
 	padding:5px;
 	width:20px;
 	height:20px;
 	background:url(images/source-s-icon.png) no-repeat 5px 5px;
-	border:1px solid #ccc;
 	cursor:pointer;
 }
 
 #markdown-bottom{
-	position: fixed;
 	right:120px;
 	bottom:5px;
 	padding:5px;
 	width:20px;
 	height:20px;
 	background:url(images/bottom-icon.png) no-repeat 5px 5px;
-	border:1px solid #ccc;
 	cursor:pointer;
+}
+
+#markdown-buttons-container {
+    position : fixed;
+    top: 40%;
+    border: 1px solid rgb(236, 236, 236);
+    background: rgb(248, 248, 248);
+    padding: 10px 0;
 }
 
 @media print{
