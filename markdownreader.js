@@ -11,21 +11,26 @@
 	link.rel = 'stylesheet';
 	link.href = chrome.extension.getURL('prettify.css');
 	document.head.appendChild(link);
-	document.body.innerHTML = '<div id="markdown-container"></div><div id="markdown-outline">'+ 
+	document.body.innerHTML = '<div id="markdown-container"></div><div id="markdown-outline">'+
                             '</div><div id="markdown-backTop" onclick="window.scrollTo(0,0);">'+
                             '</div><div id="markdown-bottom" onclick="window.scrollTo(0, document.body.scrollHeight);"></div>'+
                             '<div id="markdown-raw" onclick="window.location=\'view-source:\' + window.location.href;"></div>';
 
 	window.onresize = showOutline;
 
-	var markdownConverter = new Showdown.converter();
+	//var markdownConverter = new Showdown.converter();
 	var lastText = null;
 
 	function updateMarkdown(text) {
 		if (text !== lastText) {
+			marked.setOptions({
+				gfm: true,
+				pedantic: false,
+				sanitize: false
+			});
 			lastText = text;
-			markdownConverter.makeHtml(lastText)
-			document.getElementById('markdown-container').innerHTML = markdownConverter.makeHtml(lastText);
+			//markdownConverter.makeHtml(lastText)
+			document.getElementById('markdown-container').innerHTML = marked(lastText);
 			prettyPrint();
 			updateOutline();
 		}
@@ -70,7 +75,7 @@
 			outline.innerHTML = arrOutline.join('');
 			showOutline();
 		}
-		else outline.style.display = 'none'; 
+		else outline.style.display = 'none';
 	}
 
 	function showOutline() {
