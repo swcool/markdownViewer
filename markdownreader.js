@@ -16,8 +16,8 @@
 	'<div id="markdown-outline"></div>'+
 	'<div id="markdown-buttons-container">'+
 		'<div id="markdown-backTop" onclick="window.scrollTo(0,0);"></div>'+
-		'<div id="markdown-bottom" onclick="window.scrollTo(0, document.body.scrollHeight);"></div>'+
 		'<div id="markdown-raw" onclick="window.location=\'view-source:\' + window.location.href;"></div>'+
+		'<div id="markdown-bottom" onclick="window.scrollTo(0, document.body.scrollHeight);"></div>'+
 	'</div>';
 
 	window.onresize = showOutline;
