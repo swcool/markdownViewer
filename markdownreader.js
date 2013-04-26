@@ -20,9 +20,6 @@
 		'<div id="markdown-bottom" onclick="window.scrollTo(0, document.body.scrollHeight);"></div>'+
 	'</div>';
 
-	window.onresize = showOutline;
-
-	//var markdownConverter = new Showdown.converter();
 	var lastText = null;
 
 	function updateMarkdown(text) {
@@ -33,7 +30,6 @@
 				sanitize: false
 			});
 			lastText = text;
-			//markdownConverter.makeHtml(lastText)
 			document.getElementById('markdown-container').innerHTML = marked(lastText);
 			prettyPrint();
 			updateOutline();
@@ -63,30 +59,27 @@
 				}
 			} else if (levelCount < 0) {
 				levelCount *= -1;
+
 				for (var j = 0; j < levelCount; j++) {
 					arrOutline.push('</ul>');
 				}
-			};
+			}
+
 			arrOutline.push('<li>');
 			arrOutline.push('<a href="#' + id + '">' + headerText + '</a>');
 			arrOutline.push('</li>');
 			lastLevel = level;
 			id++;
 		}
-		arrOutline.push('</ul>')
+		arrOutline.push('</ul>');
+
 		var outline = document.getElementById('markdown-outline');
+
 		if(arrOutline.length > 2){
 			outline.innerHTML = arrOutline.join('');
-			showOutline();
+		} else {
+			outline.style.display = 'none';
 		}
-		else outline.style.display = 'none';
-	}
-
-	function showOutline() {
-		var outline = document.getElementById('markdown-outline');
-		var markdownContainer = document.getElementById('markdown-container');
-		outline.style.left = markdownContainer.offsetLeft + markdownContainer.offsetWidth + 10 + 'px';
-		outline.style.display = 'block';
 	}
 
 	var xmlhttp = new XMLHttpRequest();
