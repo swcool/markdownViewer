@@ -1,14 +1,14 @@
 *{margin:0;padding:0;}
 #markdown-container{
-	width: 748px;
-	margin:10px auto;
-	background-color: #F8F8F8;
-	border:1px solid #ccc;
-	box-shadow:0 0 10px #999;
+	display: inline;
+	float: left;
+	width: 65%;
+	margin: 10px 50px;
 	padding:2em;
 	line-height:1.4em;
     font:13.34px helvetica,arial,freesans,clean,sans-serif;
-    color:black;
+    
+	color:black;
 }
 p {
     margin:1em 0;
@@ -46,14 +46,14 @@ dt{font-weight:bold;margin-left:1em;}
 dd{margin-left:2em;margin-bottom:1em;}
 
 #markdown-outline{
-	display:none;
+	float: left;
+	display: inline;
 	position:fixed;
-	top:10px;
-	left:-999px;
-	border:1px solid #ccc;
-	box-shadow:5px 5px 2px #ccc;
-	padding: 5px 10px;
-	background-color: #fff;
+	width: 25%;
+	min-height: 100%;
+	padding: 25px 30px;
+	background-color: rgb(248, 248, 248);
+	border-left: 1px solid rgb(236, 236, 236);
 }
 #markdown-outline ul{
 	margin:5px 0 5px 0;
