@@ -11,12 +11,14 @@
 	link.rel = 'stylesheet';
 	link.href = chrome.extension.getURL('prettify.css');
 	document.head.appendChild(link);
-	document.body.innerHTML = '<div id="markdown-container"></div><div id="markdown-outline">'+
-                            '</div><div id="markdown-backTop" onclick="window.scrollTo(0,0);">'+
-                            '</div><div id="markdown-bottom" onclick="window.scrollTo(0, document.body.scrollHeight);"></div>'+
-                            '<div id="markdown-raw" onclick="window.location=\'view-source:\' + window.location.href;"></div>';
-
-	window.onresize = showOutline;
+	document.body.innerHTML =
+	'<div id="markdown-container"></div>'+
+	'<div id="markdown-outline"></div>'+
+	'<div id="markdown-buttons-container">'+
+		'<div id="markdown-backTop" onclick="window.scrollTo(0,0);"></div>'+
+		'<div id="markdown-raw" onclick="window.location=\'view-source:\' + window.location.href;"></div>'+
+		'<div id="markdown-bottom" onclick="window.scrollTo(0, document.body.scrollHeight);"></div>'+
+	'</div>';
 
 	var lastText = null;
 
@@ -57,32 +59,27 @@
 				}
 			} else if (levelCount < 0) {
 				levelCount *= -1;
+
 				for (var j = 0; j < levelCount; j++) {
 					arrOutline.push('</ul>');
 				}
-			};
+			}
+
 			arrOutline.push('<li>');
 			arrOutline.push('<a href="#' + id + '">' + headerText + '</a>');
 			arrOutline.push('</li>');
 			lastLevel = level;
 			id++;
 		}
-		arrOutline.push('</ul>')
+		arrOutline.push('</ul>');
+
 		var outline = document.getElementById('markdown-outline');
+
 		if(arrOutline.length > 2){
 			outline.innerHTML = arrOutline.join('');
-			showOutline();
+		} else {
+			outline.style.display = 'none';
 		}
-		else outline.style.display = 'none';
-	}
-
-	function showOutline() {
-		var outline = document.getElementById('markdown-outline');
-		var markdownContainer = document.getElementById('markdown-container');
-		outline.style.left = markdownContainer.offsetLeft + markdownContainer.offsetWidth + 10 + 'px';
-    outline.style.overflowY = "auto";
-    outline.style.maxHeight = document.body.clientHeight;
-		outline.style.display = 'block';
 	}
 
 	var xmlhttp = new XMLHttpRequest();

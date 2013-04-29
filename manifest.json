@@ -17,8 +17,8 @@
 	"web_accessible_resources": [
 		"markdownviewer.css",
 		"prettify.css",
-    "images/top-icon.png",
-    "images/source-s-icon.png",
-    "images/bottom-icon.png"
+    	"images/top-icon.png",
+    	"images/source-s-icon.png",
+    	"images/bottom-icon.png"
 	]
 }
