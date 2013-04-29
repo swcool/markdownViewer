@@ -18,7 +18,6 @@
 
 	window.onresize = showOutline;
 
-	//var markdownConverter = new Showdown.converter();
 	var lastText = null;
 
 	function updateMarkdown(text) {
@@ -29,7 +28,6 @@
 				sanitize: false
 			});
 			lastText = text;
-			//markdownConverter.makeHtml(lastText)
 			document.getElementById('markdown-container').innerHTML = marked(lastText);
 			prettyPrint();
 			updateOutline();
@@ -82,6 +80,8 @@
 		var outline = document.getElementById('markdown-outline');
 		var markdownContainer = document.getElementById('markdown-container');
 		outline.style.left = markdownContainer.offsetLeft + markdownContainer.offsetWidth + 10 + 'px';
+    outline.style.overflowY = "auto";
+    outline.style.maxHeight = document.body.clientHeight;
 		outline.style.display = 'block';
 	}
 
