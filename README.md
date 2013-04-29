@@ -6,10 +6,10 @@ markdownViewer is a extention for chrome, used for reading markdown file.
 Features:
 ==============
 
-1. Reading markdown file
+1. Viewing markdown file
 2. Auto reload local file when file is changed
 3. Highlight the code area
-4. Show outline beside the content
+4. Show outline beside the content with scroller
 5. Buttons for GoTop, ViewSource and GoBottom
 
 More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
@@ -42,7 +42,6 @@ markdownViewer is released under the MIT license:
 
 Thanks
 ================
-
-* markdownreader.js: [https://github.com/yaniswang/markdownReader](https://github.com/yaniswang/markdownReader)
-* showdown.js: [https://github.com/coreyti/showdown](https://github.com/coreyti/showdown)
+* markdownreader: [https://github.com/yaniswang/markdownReader](https://github.com/yaniswang/markdownReader)
+* marked.js: [https://github.com/chjj/marked/](https://github.com/chjj/marked/)
 * prettify: [http://code.google.com/p/google-code-prettify/](http://code.google.com/p/google-code-prettify/)
