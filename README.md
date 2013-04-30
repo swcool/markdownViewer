@@ -16,12 +16,11 @@ More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
 
 Change Log
 ================
-1.0.5 Some UI changes: change width percentage; move top, source, bottom
-      to left
-1.0.4 Used marked.js instead of showdown.js to render MD
-1.0.3 Removed container border when print
-1.0.2 Add Wiki and Screen Shot
-1.0.1 Initial
+- 1.0.5 Some UI changes: change width percentage; move top, source, bottom to left    
+- 1.0.4 Used marked.js instead of showdown.js to render MD  
+- 1.0.3 Removed container border when print  
+- 1.0.2 Add Wiki and Screen Shot  
+- 1.0.1 Initial  
 
 License
 ================
