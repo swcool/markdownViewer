@@ -2,7 +2,7 @@
 #markdown-container{
 	display: inline;
 	float: left;
-	width: 65%;
+	width: 70%;
     padding: 10px 40px 10px 60px;
 	line-height:1.4em;
     font:13.34px helvetica,arial,freesans,clean,sans-serif;
@@ -48,15 +48,16 @@ dd{margin-left:2em;margin-bottom:1em;}
 	float: left;
 	display: inline;
 	position:fixed;
-	width: 25%;
+	width: 30%;
 	min-height: 100%;
-	padding: 25px 30px;
+	padding: 5px 5px;
 	background-color: rgb(248, 248, 248);
 	border-left: 1px solid rgb(236, 236, 236);
+
 }
 #markdown-outline ul{
 	margin:5px 0 5px 0;
-	padding-left:30px;
+	padding-left:15px;
 	font-size:12px;
 	border-left:1px dotted #ccc;
 }
@@ -69,14 +70,14 @@ dd{margin-left:2em;margin-bottom:1em;}
 }
 
 #markdown-backTop{
-	padding: 15px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
 	width:20px;
 	height:20px;
-	background: url(images/top-icon.png) no-repeat 5px 15px;
+	background: url(images/top-icon.png) no-repeat 5px 5px;
 	cursor:pointer;
 }
 #markdown-backTop:hover {
-    background: #fff url(images/top-icon.png) no-repeat 5px 15px;
+    background: #fff url(images/top-icon.png) no-repeat 5px 5px;
 }
 
 #markdown-raw{
@@ -91,24 +92,23 @@ dd{margin-left:2em;margin-bottom:1em;}
 }
 
 #markdown-bottom{
-	padding: 5px 5px 12px 5px;
+	padding: 5px 5px 5px 5px;
 	width:20px;
 	height:20px;
 	background:url(images/bottom-icon.png) no-repeat 5px 5px;
 	cursor:pointer;
 }
 #markdown-bottom:hover {
-    background: #fff url(images/bottom-icon.png) no-repeat 5px 5px;
+    background: #fff url(images/bottom-icon.png) no-repeat 5px 5px; 
 }
-
 
 #markdown-buttons-container {
     position : fixed;
+    right: 5px;
     top: 40%;
     border: 1px solid rgb(236, 236, 236);
     background: rgb(248, 248, 248);
 }
-
 @media print{
 	#markdown-container{
 		border-width:0;
