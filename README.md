@@ -16,11 +16,24 @@ More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
 
 Change Log
 ================
-- 1.0.5 Some UI changes: change width percentage; move top, source, bottom to left    
-- 1.0.4 Used marked.js instead of showdown.js to render MD  
-- 1.0.3 Removed container border when print  
-- 1.0.2 Add Wiki and Screen Shot  
-- 1.0.1 Initial  
+### 1.0.6
+  - move buttons to right to keep outline and buttons in one place;
+  - Update outline css to have better fit size  
+
+### 1.0.5 
+  - Some UI changes: change width percentage; move top, source, bottom to left
+
+### 1.0.4 
+  - Used marked.js instead of showdown.js to render MD  
+
+### 1.0.3 
+  - Removed container border when print  
+
+### 1.0.2 
+  - Add Wiki and Screen Shot
+
+### 1.0.1 
+  - Initial  
 
 License
 ================
@@ -48,8 +61,12 @@ markdownViewer is released under the MIT license:
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
 
+Contributors
+=================
+[Contributors](https://github.com/swcool/markdownViewer/contributors)
+
 Thanks
-================
+=================
 * markdownreader: [https://github.com/yaniswang/markdownReader](https://github.com/yaniswang/markdownReader)
 * marked.js: [https://github.com/chjj/marked/](https://github.com/chjj/marked/)
 * prettify: [http://code.google.com/p/google-code-prettify/](http://code.google.com/p/google-code-prettify/)
