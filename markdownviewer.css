@@ -3,7 +3,7 @@
 	display: inline;
 	float: left;
 	width: 70%;
-    padding: 10px 40px 10px 60px;
+    padding: 10px 40px 10px 40px;
 	line-height:1.4em;
     font:13.34px helvetica,arial,freesans,clean,sans-serif;
 
@@ -104,8 +104,8 @@ dd{margin-left:2em;margin-bottom:1em;}
 
 #markdown-buttons-container {
     position : fixed;
-    right: 5px;
-    top: 40%;
+    bottom: 0;
+    right: 0;
     border: 1px solid rgb(236, 236, 236);
     background: rgb(248, 248, 248);
 }
