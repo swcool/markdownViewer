@@ -1,6 +1,7 @@
 # markdownViewer
 
-markdownViewer is a extention for chrome, used for viewing markdown file.
+markdownViewer is a Chrome extention for reading markdown file with
+an outline view, support Github like table styles.
 
 # Features
 
@@ -9,10 +10,15 @@ markdownViewer is a extention for chrome, used for viewing markdown file.
 3. Highlight the code area
 4. Show outline beside the content in scrollable way
 5. Have buttons for GoTop, ViewSource and GoBottom
+6. Support Github like table styles.
 
 More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
 
 # Change Log
+
+## 1.0.8
+  - Support Github like table styles.
+  - Update the screenshot
 
 ## 1.0.7
   - Move buttons to right bottom corner. 
