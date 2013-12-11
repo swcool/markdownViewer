@@ -16,6 +16,8 @@ More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
 
 # Change Log
 
+## 1.0.9
+- add options.html for promoting Markview
 ## 1.0.8
   - Support Github like table styles.
   - Update the screenshot

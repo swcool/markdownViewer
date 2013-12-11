@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Markdown Viewer ",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "View markdown file in Chrome.",
 	"icons": {
 		"128": "images/favicon.png",
@@ -9,6 +9,7 @@
 		"48": "images/favicon.png"
 	},
 	"permissions": ["tabs", "\u003Call_urls\u003E"],
+	"options_page": "options.html",
 	"content_scripts": [{
 		"js": ["prettify.js", "markdownviewer.js","marked.js"],
 		"matches": ["*://*/*.md", "file://*/*.md", "*://*/*.markdown", "file://*/*.markdown", "*://*/*.mdown", "file://*/*.mdown", "*://*/*.mkdn", "file://*/*.mkdn", "*://*/*.mkd", "file://*/*.mkd", "*://*/*.text", "file://*/*.text", "*://*/*.mdtext", "file://*/*.mdtext", "*://*/*.mdtxt", "file://*/*.mdtxt"],
@@ -17,8 +18,10 @@
 	"web_accessible_resources": [
 		"markdownviewer.css",
 		"prettify.css",
-    "images/top-icon.png",
-    "images/source-s-icon.png",
-    "images/bottom-icon.png"
+		"options.html",
+	    "images/top-icon.png",
+	    "images/source-s-icon.png",
+	    "images/bottom-icon.png",
+	    "images/promo-1.png"
 	]
 }
