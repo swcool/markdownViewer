@@ -1,7 +1,8 @@
 # markdownViewer
 
 markdownViewer is a Chrome extention for reading markdown file with
-an outline view, support Github like table styles.
+an outline view, support Github like table styles. More advance features
+are added in [MarkView](https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim)
 
 # Features
 
@@ -18,6 +19,7 @@ More see in [Wiki](https://github.com/swcool/markdownViewer/wiki)
 
 ## 1.0.9
 - add options.html for promoting Markview
+
 ## 1.0.8
   - Support Github like table styles.
   - Update the screenshot
