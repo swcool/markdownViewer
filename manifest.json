@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Markdown Viewer ",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "View markdown file in Chrome.",
 	"icons": {
 		"128": "images/favicon.png",
