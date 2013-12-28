@@ -124,7 +124,7 @@ body {
 }
 
 article {
-  padding: 3px0px;
+  padding: 3px 0px;
   border: 1px solid #cacaca;
   background-color: white;
 }
@@ -159,7 +159,7 @@ h4 {
 h5 {
   font-size:14px;
   font-weight:bold;
-  margin:20px 0 10pxx;
+  margin:20px 0 10px;
 }
 
 h6 {
@@ -189,7 +189,7 @@ pre, code {
   background-color:#f8f8f8;
   border:1px solid #ccc;
   font-size:13px;
-  line-height:12px9px;
+  line-height:12px 9px;
   overflow:auto;
   border-radius:3px;
   -moz-border-radius:3px;
@@ -204,7 +204,7 @@ code {
   border-radiuss:3px;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
-  margin:0 28pxpx;
+  margin:0 28px;
   padding:0 5px;
 }
 
